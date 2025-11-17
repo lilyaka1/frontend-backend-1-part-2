@@ -1,0 +1,77 @@
+.quick-actions {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quick-actions h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.action-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.complete-all {
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+}
+
+.complete-all:hover {
+  background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+}
+
+.reset-all {
+  background: linear-gradient(135deg, #f44336 0%, #da190b 100%);
+}
+
+.reset-all:hover {
+  background: linear-gradient(135deg, #da190b 0%, #c41709 100%);
+}
+
+.random-pick {
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+}
+
+.random-pick:hover {
+  background: linear-gradient(135deg, #f57c00 0%, #e65100 100%);
+}
+
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-btn {
+    width: 100%;
+  }
+}
