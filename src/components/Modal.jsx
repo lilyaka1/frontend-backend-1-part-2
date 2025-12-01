@@ -1,5 +1,3 @@
-import './Modal.css';
-
 // Простой переиспользуемый компонент модального окна
 function Modal({ isOpen, onClose, title, children }) {
   // Если модалка закрыта - не показываем ничего

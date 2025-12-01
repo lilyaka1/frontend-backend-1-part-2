@@ -1,14 +1,16 @@
 .filter-buttons {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border-radius: 16px;
+  padding: 24px;
   margin: 20px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .filter-buttons h3 {
   margin: 0 0 15px 0;
-  color: #333;
+  color: #f1f5f9;
   font-size: 1.2em;
   text-align: center;
 }
@@ -22,28 +24,29 @@
 
 .filter-btn {
   padding: 10px 20px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
   font-size: 0.95em;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #666;
+  color: #cbd5e1;
 }
 
 .filter-btn:hover {
-  border-color: #667eea;
-  color: #667eea;
+  border-color: #00d4ff;
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.1);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
   color: white;
-  border-color: #667eea;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  border-color: #00d4ff;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
 }
 
 .filter-btn:active {

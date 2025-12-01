@@ -1,5 +1,3 @@
-import './FilterButtons.css';
-
 function FilterButtons({ activeFilter, onFilterChange }) {
   const filters = [
     { id: 'all', label: 'Все', icon: '' },

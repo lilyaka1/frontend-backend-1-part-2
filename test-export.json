@@ -1,0 +1,13 @@
+{
+  "exportedAt": "2025-11-24T11:57:48.025Z",
+  "technologies": [
+    {
+      "id": 1,
+      "title": "Test Tech",
+      "status": "completed"
+    }
+  ],
+  "settings": {
+    "theme": "dark"
+  }
+}

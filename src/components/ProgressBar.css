@@ -1,0 +1,21 @@
+.progress-bar-container {
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.progress-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.progress-label {
+  font-weight: bold;
+  color: #f1f5f9;
+}
+
+.progress-percentage {
+  font-weight: bold;
+  color: #00d4ff;
+}

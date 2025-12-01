@@ -1,5 +1,3 @@
-import './ProgressHeader.css';
-
 function ProgressHeader({ technologies }) {
   const totalCount = technologies.length;
   const completedCount = technologies.filter(tech => tech.status === 'completed').length;

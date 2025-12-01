@@ -1,0 +1,42 @@
+{
+  "name": "Пример дорожной карты Frontend разработчика",
+  "description": "Базовые технологии для изучения frontend разработки",
+  "version": "1.0",
+  "technologies": [
+    {
+      "title": "Основы JavaScript",
+      "description": "Переменные, функции, объекты, массивы, циклы, условия",
+      "notes": "ES6+, стрелочные функции, деструктуризация, spread оператор",
+      "category": "frontend",
+      "githubUrl": "https://github.com/lilyaka1/frontend-backend"
+    },
+    {
+      "title": "DOM манипуляции",
+      "description": "Работа с DOM элементами, события, динамическое создание контента",
+      "notes": "querySelector, addEventListener, createElement, innerHTML",
+      "category": "frontend",
+      "githubUrl": "https://github.com/lilyaka1/frontend-backend"
+    },
+    {
+      "title": "Асинхронный JavaScript",
+      "description": "Promises, async/await, fetch API, обработка ошибок",
+      "notes": "AJAX запросы, обработка JSON, error handling",
+      "category": "frontend",
+      "githubUrl": "https://github.com/lilyaka1/frontend-backend"
+    },
+    {
+      "title": "Основы Node.js",
+      "description": "Серверная разработка на JavaScript, npm, модули",
+      "notes": "require/module.exports, package.json, npm scripts",
+      "category": "backend",
+      "githubUrl": "https://github.com/lilyaka1/frontend-backend"
+    },
+    {
+      "title": "Express.js",
+      "description": "Веб-фреймворк для Node.js, маршрутизация, middleware",
+      "notes": "REST API, CORS, body-parser, error handling",
+      "category": "backend",
+      "githubUrl": "https://github.com/lilyaka1/frontend-backend"
+    }
+  ]
+}

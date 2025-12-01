@@ -1,0 +1,226 @@
+.api-demo-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.api-demo-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.api-demo-header h1 {
+  margin: 0 0 15px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.api-demo-header p {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Навигация вкладок */
+.tabs-navigation {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  min-height: 80px;
+}
+
+.tab-button:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.tab-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.tab-title {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.tab-subtitle {
+  font-size: 12px;
+  opacity: 0.8;
+  display: block;
+}
+
+/* Информация о вкладке */
+.tab-info {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #667eea;
+}
+
+.tab-info-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.tab-info-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.tab-info-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+.tab-info-subtitle {
+  color: #667eea;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tab-info-description {
+  color: #555;
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tab-info-features {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.tab-info-features li {
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Область контента вкладки */
+.tab-content-area {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-height: 400px;
+}
+
+.tab-panel {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Объединенная вкладка Roadmap */
+.roadmap-combined {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.roadmap-section-wrapper {
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.section-title {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #667eea;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .api-demo-header h1 {
+    font-size: 24px;
+  }
+
+  .api-demo-header p {
+    font-size: 16px;
+  }
+
+  .tabs-navigation {
+    flex-direction: column;
+  }
+
+  .tab-button {
+    min-width: auto;
+  }
+
+  .tab-info-features {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-content-area {
+    padding: 20px;
+  }
+}

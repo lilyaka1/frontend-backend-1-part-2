@@ -1,14 +1,16 @@
 .quick-actions {
-  background: white;
-  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border-radius: 16px;
   padding: 25px;
   margin: 20px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .quick-actions h2 {
   margin: 0 0 20px 0;
-  color: #333;
+  color: #f1f5f9;
   font-size: 1.5em;
   text-align: center;
 }
@@ -20,7 +22,7 @@
   justify-content: center;
 }
 
-.action-btn {
+.btn {
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -32,46 +34,38 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.action-btn:hover {
+.btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.action-btn:active {
+.btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.complete-all {
-  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+.btn-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
 
-.complete-all:hover {
-  background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+.btn-success:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
 }
 
-.reset-all {
-  background: linear-gradient(135deg, #f44336 0%, #da190b 100%);
+.btn-warning {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
 }
 
-.reset-all:hover {
-  background: linear-gradient(135deg, #da190b 0%, #c41709 100%);
+.btn-warning:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
 }
 
-.random-pick {
-  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+.btn-info {
+  background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
 }
 
-.random-pick:hover {
-  background: linear-gradient(135deg, #f57c00 0%, #e65100 100%);
-}
-
-.export-data {
-  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-}
-
-.export-data:hover {
-  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+.btn-info:hover {
+  background: linear-gradient(135deg, #0099cc 0%, #0077aa 100%);
 }
 
 .export-modal-content {
@@ -80,21 +74,22 @@
 
 .export-modal-content > p {
   font-size: 1.1em;
-  color: #4caf50;
+  color: #10b981;
   margin-bottom: 20px;
 }
 
 .export-stats {
-  background: #f5f5f5;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%);
   padding: 15px;
   border-radius: 8px;
   margin: 20px 0;
   text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .export-stats p {
   margin: 8px 0;
-  color: #555;
+  color: #cbd5e1;
 }
 
 .export-actions {
@@ -127,12 +122,12 @@
 }
 
 .close-modal-btn {
-  background: #e0e0e0;
-  color: #333;
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  color: #f1f5f9;
 }
 
 .close-modal-btn:hover {
-  background: #d0d0d0;
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
 }
 
 @media (max-width: 768px) {
