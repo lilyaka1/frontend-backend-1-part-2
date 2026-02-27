@@ -1,10 +1,4 @@
-```
-GET    /api/products           - Все товары
-GET    /api/products/:id       - Товар по ID
-POST   /api/products           - Создать товар
-PATCH  /api/products/:id       - Обновить товар
-DELETE /api/products/:id       - Удалить товар
-```
+# Практические занятия 4-6
 
 ---
 
@@ -85,3 +79,11 @@ export default function ProductCard({ product, onEdit, onDelete }) {
 ```
 
 ---
+
+```
+GET    /api/products           - Все товары
+GET    /api/products/:id       - Товар по ID
+POST   /api/products           - Создать товар
+PATCH  /api/products/:id       - Обновить товар
+DELETE /api/products/:id       - Удалить товар
+```
