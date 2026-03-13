@@ -1,0 +1,195 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0f0f0f;
+  color: #e0e0e0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== App Layout ===== */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.header {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #333;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ===== Main Content ===== */
+.main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background: #7c3aed;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #6d28d9;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-email {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+.auth-main {
+  max-width: 520px;
+}
+
+.auth-switch {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #161616;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #2b2b2b;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px 12px;
+  background: #0f0f0f;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #e0e0e0;
+}
+
+.find-by-id {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.by-id-result {
+  margin-bottom: 20px;
+  background: #171717;
+  border: 1px solid #313131;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.by-id-result pre {
+  margin-top: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ===== States ===== */
+.error-message {
+  background: #7f1d1d;
+  color: #fca5a5;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  border-left: 4px solid #ef4444;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+  padding: 20px 16px;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .main {
+    padding: 16px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+  }
+
+  .find-by-id {
+    flex-direction: column;
+  }
+}
